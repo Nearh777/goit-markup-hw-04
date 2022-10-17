@@ -193,6 +193,33 @@ body {
 .contacts-list .link:focus {
   color: var(--accent-color);
 }
+
+.header-email::before {
+  display: inline-block;
+  content: "";
+  width: 16px;
+  height: 12px;
+  margin-left: auto;
+  margin-right: 10px;
+  background-repeat: no-repeat;
+  background-position: auto auto;
+  background-image: url(..//images/envelope.svg);
+}
+.header-email:hover {
+  color: var(--accent-color);
+}
+.header-tel::before {
+  content: "";
+  width: 10px;
+  height: 16px;
+  margin-left: auto;
+  margin-right: 10px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(../images/tel.svg);
+}
+
+
 /* Герой */
 .hero {
   padding-top: 200px;
@@ -254,13 +281,14 @@ height: 600px;
 max-width: 1600px;
 margin-left: auto;
 margin-right: auto;
-background-image: linear-gradient(to right,
-rgba(47, 48, 58, 0.4),
-rgba(47, 48, 58, 0.4)),
+background-image: linear-gradient(
+rgba(47, 48, 58, 0.8),
+rgba(47, 48, 58, 0.8)),
 url(../images/img-hero.jpg);
 background-repeat: no-repeat;
 background-position: center;
 background-size: cover;
+background-color: #C4C4C4;
 }
 
 /* Section */
