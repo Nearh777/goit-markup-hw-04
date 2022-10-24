@@ -194,29 +194,21 @@ body {
   color: var(--accent-color);
 }
 
-.header-email::before {
-  display: inline-block;
-  content: "";
-  width: 16px;
-  height: 12px;
-  margin-left: auto;
+.header-email {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-right: 10px;
-  background-repeat: no-repeat;
-  background-position: auto auto;
-  background-image: url(..//images/envelope.svg);
+  
 }
 .header-email:hover {
   color: var(--accent-color);
 }
-.header-tel::before {
-  content: "";
-  width: 10px;
-  height: 16px;
-  margin-left: auto;
-  margin-right: 10px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-image: url(../images/tel.svg);
+.header-tel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px; 
 }
 
 
