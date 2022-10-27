@@ -401,9 +401,16 @@ background-color: #C4C4C4;
 .team .title {
   margin-bottom: 10px;
 }
+
+.team .item {
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2),
+  0px 1px 1px rgba(0, 0, 0, 0.14),
+  0px 1px 3px rgba(0, 0, 0, 0.12)
+}
 .team-img {
   padding-top: 30px;
   padding-bottom: 30px;
+  
 
 }
 
@@ -499,6 +506,12 @@ background-color: #C4C4C4;
   margin-bottom: 4px;
 }
 
+.work .techno {
+  box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16),
+              0px 4px 4px rgba(0, 0, 0, 0.06),
+              0px 1px 1px rgba(0, 0, 0, 0.12)
+}
+
 .work-list {
   display: flex;
   flex-wrap: wrap;
@@ -592,7 +605,7 @@ background-color: #C4C4C4;
   color: var(--accent-color);
 }
 
-.contact-wrap {
+.contact-wrap > .container {
   display: flex;
   align-items: baseline;
 }
@@ -617,11 +630,29 @@ background-color: #C4C4C4;
   height: 44px;
 }
 .footer-soc-link {
-  display: flex;
+  display: flex;  
   width: 100%;
   height: 100%;  
   align-items: center;
   justify-content: center;
+  background: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
   Fill: #ffffff;
 }
+
+.container .footer-soc {
+  padding-left: 70px;
+}
+
+.footer-soc-link:hover,
+.footer-soc-link:focus {
+  background-color:var(--accent-color); 
+  outline: none;  
+}
+
+.footer-soc-link:hover .footer-soc-icon,
+.footer-soc-link:focus .footer-soc-icon {
+  fill: var(--primary-white-color);
+}
+
+
