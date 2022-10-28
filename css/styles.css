@@ -312,17 +312,11 @@ background-color: #C4C4C4;
   margin-left: 30px;
 }
 
-.feature-icon-list {
-  display: flex;
-  margin-bottom: 30px;
-  gap: 30px;
-  
-}
-
 .feature-icon-item {
-  width: calc((100% - 90px) / 4);
   height: 120px;
   border-radius: 4px;
+  margin-bottom: 30px;
+  gap: 30px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -403,6 +397,7 @@ background-color: #C4C4C4;
 }
 
 .team .item {
+  background-color: #FFFFFF;
   box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2),
   0px 1px 1px rgba(0, 0, 0, 0.14),
   0px 1px 3px rgba(0, 0, 0, 0.12)
@@ -526,6 +521,7 @@ background-color: #C4C4C4;
 }
 
 .work-link {
+  display: block;
   text-decoration: none;
 }
 .work-img {
@@ -605,7 +601,7 @@ background-color: #C4C4C4;
   color: var(--accent-color);
 }
 
-.contact-wrap > .container {
+.footer > .container {
   display: flex;
   align-items: baseline;
 }
