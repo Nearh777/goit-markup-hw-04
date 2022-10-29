@@ -271,6 +271,7 @@ body {
 .button.secondary:focus {
   color: var(--primary-white-color);
   background-color: var(--color-btn-primery);
+  outline: none;
 }
 /*            Overlay       */
 
@@ -501,11 +502,6 @@ background-color: #C4C4C4;
   margin-bottom: 4px;
 }
 
-.work .techno {
-  box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16),
-              0px 4px 4px rgba(0, 0, 0, 0.06),
-              0px 1px 1px rgba(0, 0, 0, 0.12)
-}
 
 .work-list {
   display: flex;
@@ -523,7 +519,18 @@ background-color: #C4C4C4;
 .work-link {
   display: block;
   text-decoration: none;
+  
 }
+
+.work-link:hover,
+.work-link:focus {
+  box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16),
+  0px 4px 4px rgba(0, 0, 0, 0.06),
+  0px 1px 1px rgba(0, 0, 0, 0.12);
+  outline: none;
+}
+
+
 .work-img {
   display: block;
 }
@@ -637,7 +644,7 @@ background-color: #C4C4C4;
 }
 
 .container .footer-soc {
-  padding-left: 70px;
+  margin-left: 70px;
 }
 
 .footer-soc-link:hover,
